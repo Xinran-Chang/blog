@@ -1,7 +1,7 @@
 <template>
   <el-container style="height: 100vh;">
     <el-aside width="250px" style="background-color: rgb(238, 241, 246)">
-      <el-menu router :default-openeds="['1', '2']">
+      <el-menu router :default-openeds="['1','2','3']">
         <el-submenu index="1">
           <template slot="title">
             <i class="el-icon-files"></i>Article
@@ -20,6 +20,16 @@
             <template slot="title">Classification</template>
             <el-menu-item index="/classification/create">ClassificationList</el-menu-item>
             <el-menu-item index="/classification/list">ClassificationManagement</el-menu-item>
+          </el-menu-item-group>
+        </el-submenu>
+        <el-submenu index="3">
+          <template slot="title">
+            <i class="el-icon-collection-tag"></i>AdminManagement
+          </template>
+          <el-menu-item-group>
+            <template slot="title">AdminUser</template>
+            <el-menu-item index="/adminuser/list">AdminUserList</el-menu-item>
+            <el-menu-item index="/adminuser/create">AdminUserEdit</el-menu-item>
           </el-menu-item-group>
         </el-submenu>
       </el-menu>

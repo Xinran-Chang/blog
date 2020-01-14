@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            outline: none;
+        }
+
+        html {
+            font-size: 13px;
+        }
+
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, Helvetica, sans-serif;
+            line-height: 1.2rem;
+        }
+
+
+
+        .top {
+            height: 30px;
+            border-bottom: 1px solid #eeeeee;
+        }
+
+        .top-con {
+            line-height: 30px;
+            width: 800px;
+            margin: 0 auto;
+        }
+
+        .nav-con {
+            display: flex;
+            justify-content: space-between;
+            width: 800px;
+            margin: 0 auto;
+        }
+
+        .nav-con img {
+            margin: 50px 0;
+            height: 80px;
+            width: 100px;
+            border-radius: 50%;
+        }
+
+        .list {
+            margin: 50px 0;
+            display: flex;
+            align-content: space-between;
+            width: 500px;
+            height: 80px;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+        }
+        .list span{
+            color: #f47e00;
+        }
+
+        .home {
+            flex: 1;
+            line-height: 80px;
+            font-size: 18px;
+        }
+
+        .about {
+            flex: 1;
+            line-height: 80px;
+            font-size: 18px;
+        }
+
+        .contact {
+            flex: 1;
+            line-height: 80px;
+            font-size: 18px;
+        }
+
+        .container {
+            width: 800px;
+            margin: 0 auto;
+        }
+
+        .container .img {
+            width: 100%;
+            height: 300px;
+            background: #000;
+            border-radius: 10px;
+        }
+
+        .title {
+            margin: 20px 0;
+            font-weight: 700;
+            font-size: 25px;
+            line-height: 25px;
+        }
+        .content p{
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            line-height: 25px;
+            color: #555555;
+        }
+        .button{
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            text-align: center;
+            line-height: 46px;
+            width: 150px;
+            height: 46px;
+            border: 1px solid #f47e00;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="header">
+        <div class="top">
+            <div class="top-con">
+                <p>你好，欢迎来到我的博客!</p>
+                <div class="icon"></div>
+            </div>
+        </div>
+        <div class="nav">
+            <div class="nav-con">
+                <img src="../web/src/assets/logo.jpeg" alt="">
+                <div class="list">
+                    <div class="home">首页<span>_</span>HOME</div>
+                    <div class="about">关于<span>_</span>ABOUT</div>
+                    <div class="contact">联系<span>_</span>CONTACT</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="img"></div>
+        <div class="title">怎么用数据思维做设计</div>
+        <div class="content">
+            <p>我们的流线式网页布局设计方案和可视化图文内容编辑模式让网站制作和维护成为一件轻松惬意的事。起飞页提供了海量精美网站模板和成品网站，起飞页的核心竞争力来自于它集流线式布局方案与可视化内容编辑于一体，支持打字传图、自由拖拽，不需要专业编写代码，也没有其他建站工具的层叠式烦恼，您可以随心所欲创建区块、添加组件…
+            </p>
+            <p>
+            当今最领先的响应式自助建站平台，我们的流线式网页布局设计方案和可视化图文内容编辑模式让网站制作和维护成为一件轻松惬意的事。无论您是普通互联网用户， 还是专业网站制作人员，都能使用起飞页设计出...
+            </p>
+        </div>
+        <button type="button" class="button">READ ME +</button>
+    </div>
+    <div class="footer"></div>
+</body>
+
+</html>

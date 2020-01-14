@@ -1,0 +1,23 @@
+{
+  "id": "",
+  "name": "",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "1261986",
+      "name": "phone",
+      "font_class": "phone",
+      "unicode": "e6dd",
+      "unicode_decimal": 59101
+    },
+    {
+      "icon_id": "11982674",
+      "name": "Mail, letter, envelope",
+      "font_class": "Mailletterenvelope",
+      "unicode": "e9d0",
+      "unicode_decimal": 59856
+    }
+  ]
+}

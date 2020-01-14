@@ -1,14 +1,14 @@
 <template>
   <div>
-    <el-table :data="articlelists">
-      <el-table-column prop="title" label="Title" width="500"></el-table-column>
-      <el-table-column prop="category.name" label="Category"></el-table-column>
+    <el-table :data="items">
+      <el-table-column prop="_id" label="ID"></el-table-column>
+      <el-table-column prop="username" label="UserName"></el-table-column>
       <el-table-column fixed="right" label="operation" width="100">
         <template slot-scope="scope">
           <el-button
             type="text"
             size="small"
-            @click="$router.push(`/article/edit/${scope.row._id}`)"
+            @click="$router.push(`/adminuser/edit/${scope.row._id}`)"
           >edit</el-button>
           <el-button type="text" size="small" @click="remove(scope.row)">delete</el-button>
         </template>
@@ -21,22 +21,22 @@
 export default {
   data() {
     return {
-      articlelists: []
+      items: []
     };
   },
   methods: {
     async fetch() {
-      const res = await this.$http.get("articles");
-      this.articlelists = res.data;
+      const res = await this.$http.get("admin_users");
+      this.items = res.data;
     },
     async remove(row) {
-      this.$confirm("是否删除文章?", "提示", {
+      this.$confirm("是否删除?", "提示", {
         confirmButtonText: "确定",
         cancelButtonText: "取消",
         type: "warning"
       })
         .then(async () => {
-          await this.$http.delete(`articles/${row._id}`);
+          await this.$http.delete(`admin_users/${row._id}`);
           this.$message({
             type: "success",
             message: "删除成功!"
